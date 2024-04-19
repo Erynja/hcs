@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Semantic text elements</title>
+</head>
+<body>
+    <!-- <b> - bold - deprecated -->
+    <!-- <strong> - 1st level emphasis (normally, bold) -->
+    <!-- <i> - italic - deprecated (nowadays <i> is used for font icons)-->
+    <!-- <em> - 2nd level emphasis (normally, italic) -->
+    <!-- <u> - underline - deprecated -->
+    <!-- <ins> - 3rd level emphasis (used mostly for indicating inserted text) -->
+    <!-- <s> - strikethrough - deprecated -->
+    <!-- <del> - used mostly for indicating deleted text -->
+    <!-- <mark> - relevance versus importance (use <strong>) - normally used for marking or hightlighting text -->
+    <p><span>Lorem ipsum, dolor sit amet consectetur <i>adipisicing</i> elit. Facilis enim soluta sunt ad nam neque eum aperiam vero. Tenetur ab maiores <em>exercitationem aspernatur</em> explicabo facilis delectus autem cupiditate neque ipsum.</span><span>Distinctio, ex ipsam <b>obcaecati excepturi</b> commodi possimus corporis natus inventore ipsa <strong>illum laudantium</strong>, quisquam molestiae asperiores vel sit accusamus animi <u>facere cupiditate</u> modi a porro ullam quae nihil. Provident, vel?</span></p>
+
+    <p><span>Lorem, <ins>ipsum dolor</ins> sit amet consectetur <s>adipisicing elit</s>. Consectetur accusamus quaerat dolorum <del>veritatis molestiae</del> voluptate eum iusto assumenda fugiat aperiam illo ea, magni nobis molestias excepturi temporibus. Odit, id dolor.</span><span>Tenetur ut voluptatibus facilis accusamus hic, sapiente quisquam non rerum laborum fuga ducimus eligendi quia quaerat reiciendis impedit cumque repudiandae, nobis culpa. Quia dolores repellat quibusdam nemo exercitationem vel ducimus.</span></p>
+
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsam labore repellat possimus! Aut non dolores dignissimos nemo ratione impedit, officia fugit nisi est distinctio iure deleniti eos harum. Est?</span><span>Iste, maxime ex tenetur fugiat blanditiis nemo, <mark>perspiciatis recusandae</mark> saepe earum fugit consequuntur ullam doloremque dicta sapiente omnis magni, repudiandae amet molestiae sequi. Quos nemo, tenetur fuga accusantium ex quia.</span></p>
+    
+    <!-- HTML entities -->
+    <!-- &#9748; - decimal notation -->
+    <!-- &#x2614; - hexadecimal notation -->
+    <p>&#9748; &#x2614;</p>
+    <p>&spades;&hearts;&clubs;&diamondsuit;</p>
+    <p>&euro;</p>
+    <p>&copy; © 2024 Pedro Remoaldo</p>
+
+    <!-- sub - subscript -->
+    <p>Water: H<sub>2</sub>O</p>
+
+    <!-- sub - superscript -->
+    <p>Oxygen: O<sup>2</sup></p>
+
+    <!-- whitespace - spaces, tabs and returns/enter/newline -->
+    <!-- HTML/browser will condense consecutive whitespace into a single space -->
+    <!-- &nbsp; - non-breaking space -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        
+        
+        Minus,                                 necessitatibus fugiat                        nostrum delectus fuga aut aperiam odio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;molestiae ipsum veritatis dignissimos ipsam. Temporibus eos autem tempore exercitationem debitis ea sapiente.</p>
+
+    <!-- pre - keeps all the original whitespace -->
+    <!-- downsides - the font is changed to a monospaced font (like Courier, Courier New or Consolas) and the text lines don't break -->
+    <pre>Lorem, ipsum dolor sit amet 
+    
+    
+    consectetur adipisicing elit. Eos,                          aperiam? Dolore soluta cum rerum quas, obcaecati alias minus vitae sequi voluptas exercitationem                        consequuntur deserunt, consectetur libero quam tempore illum vel!</pre>
+
+    <!-- computer stuff -->
+    <p>Example of a JavaScript program:</p>
+    <code><pre>
+    let name="Pedro Remoaldo";
+    console.log(name);
+    </pre></code>
+    <p>Press <kbd>Ctrl+C</kbd> to copy text.</p>
+
+    <!-- mathematical stuff -->
+    <p>The result of the calculation is <samp>25</samp>.</p>
+    <p>Einstein define the following formula: <var>E</var>=<var>m</var><var>c</var><sup>2</sup></p>
+
+    <!-- quote -->
+    <p>The most famous quote from <cite>Hamlet</cite> <q>To be or not to be</q></p>
+    <p lang="de">The most famous quote from Hamlet <q>To be or not to be</q></p>
+    <blockquote cite="https://shakespeare.mit.edu/hamlet/full.html" title="Taken from Hamlet">
+        <pre>
+BERNARDO
+Who's there?
+FRANCISCO
+Nay, answer me: stand, and unfold yourself.
+BERNARDO
+Long live the king!
+FRANCISCO
+Bernardo?
+BERNARDO
+He.
+FRANCISCO
+You come most carefully upon your hour.
+BERNARDO
+'Tis now struck twelve; get thee to bed, Francisco.
+        </pre>
+    </blockquote>
+    
+    <p><abbr title="United Nations">UN</abbr> means United Nations</p>
+    <address>
+        Hamburg Coding School<br>
+        Gasstraße 4, 22761<br>
+        Hamburg<br>
+        Germany<br>
+    </address>
+    <address>
+        <p>Hamburg Coding School</p>
+        <p>Gasstraße 4, 22761</p>
+        <p>Hamburg</p>
+        <p>Germany</p>
+    </address>
+    <p>Lorem ipsum dolor sit amet<br>consectetur adipisicing elit. Numquam officia corrupti repellendus ut illum nesciunt assumenda culpa<br>nulla beatae laudantium deserunt tenetur, illo sunt! Itaque voluptatum aliquam tempore nemo fugit.</p>
+</body>
+</html>

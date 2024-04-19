@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 7 - Forms</title>
+</head>
+<body>
+    <h1>Create a new account</h1>
+    <!-- 
+        action - attribute that defines the page/file that is going to process this form when it is submitted 
+    -->
+    <!-- 
+        rules for ids:
+        - only use letters, digits and _
+        -spaces are not allowed
+        - do not use symbols and accent characters (ä, é, â)
+        -use only lowercase letters or camel case (camelCase) notation or snake notation (total_articles) 
+    -->
+    <form id="newaccountform" action="processform.aspx">
+        <p>
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="address">Address:</label> 
+            <input type="text" id="address" name="address">
+        </p>
+        <p>
+            <label for="postalcode">Postal Code:</label> 
+            <input type="text" id="postalcode" size="5" maxlength="5" name="postalcode">
+            <input type="text" id="city" name="city">
+        </p>
+        <p>
+            <label for="country">Country:</label> 
+        <!-- <input type="text" id="country"></p> -->
+            <select id="country" name="country">
+                <option value="">-- Select a country --</option>
+                <optgroup label="Europe">
+                    <option value="hr">Croatia</option>
+                    <option value="de">Germany</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="in">India</option>
+                </optgroup>
+            </select>
+        <p>Gender: 
+            <input type="radio" id="female" value="F" name="gender" checked> 
+            <label for="female">Female</label> 
+            <input type="radio" id="male" value="M" name="gender"> 
+            <label for="male">Male</label>
+            <input type="radio" id="other" value="O" name="gender">
+            <label for="other">Other: </label>
+            <input type="text" name="gender" id="otherGender" disabled>
+        </p>
+        <p>Hobbies:</p>
+        <p><input type="checkbox" name="hobbies" value="cinema">
+            <label for="cinema">Cinema</label></p>
+        <p><input type="checkbox" name="hobbies" value="gaming">
+            <label for="cinema">Gaming</label></p>
+        <p><input type="checkbox" name="hobbies" value="books">
+            <label for="cinema">Books</label></p>
+        <p><input type="checkbox" name="hobbies" value="travel">
+            <label for="cinema">Travel</label></p>
+        <p>
+            <input type="submit" value="Click to submit">
+        </p>
+    </form>
+
+    <script>
+        document.getElementById("other").addEventListener("click", function() {
+            document.getElementById("otherGender").removeAttribute("disabled");
+            document.getElementById("otherGender").focus();
+        });
+        document.getElementById("female").addEventListener("click", function() {
+            document.getElementById("otherGender").setAttribute("disabled",true);
+            document.getElementById("otherGender").value="";
+        });
+        document.getElementById("male").addEventListener("click", function() {
+            document.getElementById("otherGender").setAttribute("disabled",true);
+            document.getElementById("otherGender").value="";
+        });
+    </script>
+</body>
+</html>

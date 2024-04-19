@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
+    <style>
+        /* CSS - Cascading Style Sheets */
+        /* CSS rule */
+        /* 
+        selector {
+            property: value;
+        }
+        */
+
+        /* :root {} */
+        /* * {} - universal selector */
+
+        @font-face {
+            font-family: "Open Sans";
+            src:
+                local("Open Sans"),
+                url("fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype")
+        }
+
+        body {
+            /* web-safe font stacks */
+            /* font-family: 'Avant Garde', sans-serif; */
+            font-family: "Open Sans", sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* 5 types of typefaces */
+            /*
+            serif - Times New Roman
+            sans-serif - Arial
+                font-family: Arial, Helvetica, sans-serif;
+            monospace - Courier New
+                font-family: 'Courier New', Courier, monospace;
+            cursive - Comic Sans
+                font-family: 'Comic Sans', cursive;
+            fantasy - Impact (Windows)
+                font-family: Impact, Haettenschweiler, fantasy;
+            */
+
+            /* 
+            fonts file formats
+            EOT - deprecatad - only for Internet Explorer
+            TTF / OTF - (TrueType / OpenType) used more on paper
+            SVG - deprecated
+            WOFF/WOFF2 - web specific format
+            */
+
+
+        }
+
+        /* tag/element selector */
+        p {
+            color: blue; /* changes the text color */
+            /* default size of text in almost all the browsers - 16px */
+            font-size: 24px;
+            line-height: 48px; /* space between lines of text */
+            text-transform: uppercase; /* change all letters to uppercase */
+        }
+        h1 {
+            /* By default, H1 have a 2em size which means its 2 times the default size = 2 x 16 = 32px */
+            /* font-size: 2em; */
+            color: white;
+            /* background-color: darkgreen; */
+            /* #000 - black, #fff - white / hexadecimal notation - 0123456789abcdef */
+            background-color: #f00; /* #ff0000 - RGB - Red, Green, Blue - #RRGGBB */
+        }
+        /*
+        rules for ids and classes:
+        - only use letters, digits and _ (underscore)
+        - don't start a name with a digit
+        - spaces are not allowed
+        - don't use symbols and accented characters (ä, á, ç, ñ)
+        - use only lowercase letters (totalarticles), camel notation (totalArticles) or snake notation (total_articles)
+        */
+        /* class selector */
+        /*  the most used selector in CSS */
+        .special {
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 12px; /* kerning */
+            word-spacing: 1em;
+        }
+        /* id selector */
+        #highlight {
+            background-color: yellow;
+            text-decoration: line-through overline underline;
+        }
+        /* fonts / typeface */
+        /* default font in browsers is Times New Roman - serif font */
+
+        .specialtext {
+            font-weight: bold;
+            font-style: italic;
+            color: white;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="special">CSS Example</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut provident dolore similique error. Facilis ipsum, ducimus eum natus assumenda sunt similique eius necessitatibus modi odit, et, <span class="specialtext">pariatur non incidunt</span>. Lorem ipsum dolor sit amet consectetur adipisicing elit. <del>Totam officiis fugit,</del> deleniti odit, nesciunt placeat eius aperiam delectus quo, quidem ex optio! Exercitationem porro cupiditate non odio! Neque, hic doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, cumque. Esse, aliquam, expedita animi delectus amet dolorem neque iure dolorum, minima dicta hic quo placeat ab laboriosam similique nesciunt iste.</p>
+    <p id="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut provident dolore similique error. Facilis ipsum, ducimus eum natus assumenda sunt similique eius necessitatibus modi odit, et, pariatur non incidunt.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum, dolorem enim architecto quisquam voluptatem aspernatur voluptatibus vitae facere quis dicta totam animi iure consequatur, minus corporis non hic maiores.</p>
+    <p>Optio est temporibus provident ex consequuntur dignissimos quod porro nisi, dolorem quo ratione atque eveniet id placeat sint laudantium sequi! Hic voluptatibus asperiores minus vel accusamus eius omnis suscipit eum.</p>
+    <p class="special">Enim suscipit tempore officiis? Repellendus itaque mollitia nulla eos. Libero exercitationem neque deserunt assumenda quas ea ipsum magni quos excepturi eveniet suscipit minus, architecto commodi dolore iste ipsa fugiat reprehenderit!</p>
+    <p>Amet rem nobis architecto omnis facilis voluptatem culpa consequatur corporis accusamus nostrum voluptate est magnam, ipsum iusto eum quae molestias libero, reiciendis inventore cumque? Tempore quisquam assumenda ipsa nemo est?</p>
+    <p class="special">Quod doloribus commodi ad accusamus totam consequatur, ut odit necessitatibus id sunt iusto, impedit possimus consequuntur reiciendis dolor incidunt ex ducimus cupiditate iure vero quasi expedita deserunt nisi. Corrupti, et.</p>
+    <p class="special">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio at facilis dolorum, obcaecati, explicabo saepe aperiam possimus doloribus adipisci necessitatibus exercitationem impedit quidem sequi voluptatibus quos nihil, illum consequatur cupiditate?</p>
+</body>
+</html>
