@@ -1,0 +1,158 @@
+/* universal selector - applies to all of the elements on the page */
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: rgb(241,239,237);
+    /* rgb (red, green, blue)
+    rgb (0-255, 0-255, 0-255)
+    rgb (0, 0, 0) - black
+    rgb (255, 255, 255) - white */
+
+}
+body {
+    width: 1060px;
+    margin: auto;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    line-height: 1.5;
+}
+
+/* The header has a background color of rgb(230,68,21) and is 80px height. The logo is on the logo.svg file and has a left space of 50px. */
+
+header {
+    background-color: rgb(230,68,21);
+    height: 80px;
+    /* padding-top: calc((80px - 23px) / 2);
+    padding-left: 50px; */
+}
+/* the image size is 113px x 23px */
+/* header img { */
+#logo {
+    /* 80px - height of the header */
+    /* 23px - height of the logo */
+    margin-top: calc((80px - 23px) / 2);
+    margin-left: 50px;
+}
+main {
+    padding: 50px;
+}
+.subTitle {
+    color: #e64415;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 44px;
+    margin-top: 0;
+}
+.dateTime {
+    color: #807e7c;
+}
+.highlight {
+    background-color: rgb(233, 241, 245);
+    padding: 20px;
+}
+.iconBar {
+    /* text-align: right; */
+    border-bottom: 1px dotted #dddbd9;
+    border-top: 1px dotted #dddbd9;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+/* .iconBar a:first-child {
+    float: left;
+} */
+/* .iconBar > a > img { */
+/* .iconBar img:not(:first-child) { */
+.iconBar span img {
+    margin-left: 30px;
+}
+.iconBar img:hover {
+    /* 0 - transparent / 1 - opaque */
+    opacity: 0.7;
+    /* a - alpha channel - transparency */
+    /* the color property will not work because it only applies to text */
+    /* color: rgba(0,0,0,0.3); */
+}
+figure {
+    margin: 0;
+}
+figcaption {
+    font-size: 14px;
+    color: rgb(128, 126, 124);
+}
+.copyright {
+   color: #bbb9b7; 
+}
+.linksText {
+    color: #e64415;
+}
+.linksText:hover {
+    color: rgb(47,45,43);
+}
+.linksText img {
+    vertical-align: middle;
+    width: 12px;
+    height: 16px;
+}
+h2 {
+    color: #e64415;
+    font-size: 20px;
+}
+.floatingImage {
+    float: right;
+    margin-left: 100px;
+}
+.similarNews {
+    overflow: hidden;
+    border-top: 1px dotted #dddbd9;
+    padding: 20px;
+}
+/* :first-child, :nth-child(2), :last-child */
+.similarNews:last-child {
+    border-bottom: 1px dotted #dddbd9;
+}
+.similarNews > p {
+    font-weight: bold;
+}
+.author {
+    color: rgb(128, 126, 124);
+    /* standard text size - 16px */
+    /* font-size: 14px; */
+    font-size: calc(1rem - 2px);
+}
+.readMoreLinks a {
+    border: 1px solid rgb(221, 219, 217);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    /* display: inline-block; */
+}
+.readMoreLinks a:hover {
+    background-color: rgb(241,239,237);
+    border-color: black;
+}
+footer {
+    text-align: center;
+    background-color: rgb(47,45,43);
+    padding: 40px 30px;
+}
+footer h3 {
+    color: white;
+    margin-top: 0;
+}
+footer a {
+    font-size: 12px;
+    color: #bbb9b7;
+    margin-left: 10px;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #f1efed;
+}
