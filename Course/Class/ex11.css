@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+    max-width: 2090px;
+  }
+  #courses{
+    display: flex;
+    column-gap: 30px;
+  }
+  #courses h3{
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #courses section{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 650px;
+    transition: all 1s;
+  }
+  #courses section:hover{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+    top: -20px;
+  }
+  .coursesTop{
+    position: relative;
+  }
+  .highlight{
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .highlightRemote{
+    background-color: burlywood;
+  }
+  .highlightHybrid{
+    background-color: blue;
+    color: white;
+  }
+  .highlightClassroom{
+    background-color: pink;
+  }
+  .infoImage{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+  }
+  .difficulty{
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-bottom: 1px;
+  }
+  .addInfo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+  }
+  .addInfo p{
+    margin: 0;
+  }
+
+
+

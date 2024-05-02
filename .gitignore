@@ -1,3 +1,9 @@
+# Fonts
+*.ttf
+*.woff
+
+# Images
+
 # JPEG
 *.jpg
 *.jpeg
