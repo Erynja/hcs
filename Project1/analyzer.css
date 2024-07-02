@@ -57,3 +57,16 @@ video {
     align-items: center;
     
   }
+
+  #draw {
+    position: relative;
+    height: 100vh;
+    transform: translate(-84%, 40%);
+    display: flex;
+    align-items: center;
+    mix-blend-mode: screen;
+    width: 920px;
+    height: 690px;
+    margin: 0 auto;
+    background: url(images/greymonx.jpg) top center;
+  }
