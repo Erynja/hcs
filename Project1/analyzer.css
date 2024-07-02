@@ -49,14 +49,6 @@ video {
     font-size: 3vw;
   }
   
-  .portrait{
-    position: relative;
-    height: 100vh;
-    transform: translate(-90%, 0%);
-    display: flex;
-    align-items: center;
-    
-  }
 
   #draw {
     position: relative;
@@ -70,3 +62,5 @@ video {
     margin: 0 auto;
     background: url(images/greymonx.jpg) top center;
   }
+
+
