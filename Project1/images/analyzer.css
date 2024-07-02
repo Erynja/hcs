@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+  }
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 150%;
+    line-height: 1.4;
+  }
+  body {
+    margin: 0;
+  }
+
+video {
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
+  .video-wrapper {
+    border: 2px solid #000;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  .header_title{
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .header_title h1 {
+    position: relative;
+    top: 10%;
+    transform: translate(100%, 0%);
+    width: 100%;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    line-height: 1.2;
+    font-size: 3vw;
+  }
+  
+
+  #draw {
+    position: relative;
+    height: 100vh;
+    transform: translate(-84%, 40%);
+    display: flex;
+    align-items: center;
+    mix-blend-mode: screen;
+    width: 920px;
+    height: 690px;
+    margin: 0 auto;
+    background: url(images/greymonx.jpg) top center;
+  }
+
+

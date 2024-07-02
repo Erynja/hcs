@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon Analyzer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="analyzer.css">
+</head>
+<body>
+<div class="video-wrapper">
+    <video autoplay muted loop poster="images/stillgrid.png">
+        <source src="images/vecteezy_animated-grid-background-background-animation_23162575.mp4" type="video/mp4">
+    </video>
+    <header class="header_title">
+        <h1>DigitalMonster</h1>
+<<<<<<< HEAD
+    </header>     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <div id="draw"></div>
+     <script type="text/javascript">
+             $(function() {
+       var ani = {
+         frame_height: 690,
+         num_frames: 77,
+         loop_frame: 73,
+         frame_duration: 50,
+         cur_frame: 0
+       };
+       window.setInterval(
+         function() {
+           $('#draw').css( 'background-position-y',
+                           (-ani.frame_height * ani.cur_frame ) + 'px'
+                         );
+           ani.cur_frame = (ani.cur_frame + 1) % ani.num_frames;
+           if (ani.cur_frame == 0) ani.cur_frame = ani.loop_frame;
+         },
+         ani.frame_duration
+       );
+     });
+         </script>
+     </body>
+     </html>
+=======
+    </header>
+    <section class="portrait"><img src="images/Greymon5.gif" alt=""></section>
+   </div>
+</body>
+</html>
+>>>>>>> parent of 0f0f292 (made gif transparent and added link to another site from gif)
