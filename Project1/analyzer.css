@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "PixelDigivolve";
+  src:
+    local("PixelDigivolve"),
+    url("fonts/digivolve/PixelDigivolve.ttf") format("truetype") ,
+    url("fonts/digivolve/PixelDigivolveItalic.ttf") format("truetype");
+}
+
 html, body {
     height: 100%;
+    color: #ffffff;
   }
   html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -19,7 +28,6 @@ video {
     position: fixed;
   }
   .video-wrapper {
-    border: 2px solid #000;
     width: 1920px;
     height: 1080px;
     position: relative;
@@ -35,25 +43,39 @@ video {
     justify-content: center;
   }
 
-  .header_title h1 {
+  .header_title h1{
     position: relative;
-    top: 10%;
-    transform: translate(100%, 0%);
+    transform: translate(40%, 0%);
     width: 100%;
     text-align: center;
-    font-family: 'Syncopate', sans-serif;
+    font-family: PixelDigivolve, sans-serif;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.3vw;
+    line-height: 1.2;
+    font-size: 6vw;
+    font-style: italic;
+  }
+
+  .header_title h2 {
+    position: relative;
+    transform: translate(-70%, 80%);
+    width: 100%;
+    text-align: center;
+    font-family: PixelDigivolve, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
     line-height: 1.2;
     font-size: 3vw;
+    font-style: italic;
   }
   
 
   #draw {
-    position: relative;
+    position: absolute;
     height: 100vh;
-    transform: translate(-84%, 40%);
+    transform: translate(0%, 40%);
     display: flex;
     align-items: center;
     mix-blend-mode: screen;
@@ -62,5 +84,11 @@ video {
     margin: 0 auto;
     background: url(images/greymonx.jpg) top center;
   }
+
+  form{
+    position: relative;
+  }
+
+  
 
 
