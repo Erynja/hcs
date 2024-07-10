@@ -7,21 +7,9 @@
   <title>Digimon Analyzer</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="analyzer.css">
-  <link rel="script" href="action.js">
-  <script type="text/javascript">
-    function myFunction() {
-    var number = getElementById("digiName");
-    document.getElementById("digiName").innerHTML = number;
-    }
-  </script>
-  
 </head>
 
-<body onload="
-// myFunction(), ">
-  </bodyonload>
-
-
+<body>
 
   <div class="video-wrapper">
     <video autoplay muted loop poster="images/stillgrid.png">
@@ -30,14 +18,23 @@
     
     <header class="header_title">
       <h1>DigitalMonster</h1>
-      <h2><span id="digiName"></span></h2>
+      <h2><span id="results"></span></h2>
     </header>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <div id="draw"></div>
-    <script type="text/javascript">
+
+    <!-- <div id="draw"></div> -->
+
+    <div id="digimonDraw"></div>
+    <!-- <script type="text/javascript">
+      var name = $('section.digiImage').attr('data-digi-name')
+      $('section.digiImage').css('background-image', 'url(images/' + name + '.jpg)', 'top center')
+    </script> -->
+
+    <!-- <script type="text/javascript">
       $(function showDigimon() {
+        
         var ani = {
           frame_height: 690,
           num_frames: 77,
@@ -47,7 +44,17 @@
         };
         window.setInterval(
           function () {
-            $('#draw').css('background-position-y',
+            var name = $('section.digiImage').attr('data-digi-name')
+        $('section.digiImage').css('background-image', 'url(images/' + name + '.jpg)', 'top center')
+        $('section.digiImage').css('height', '100vh');
+        $('section.digiImage').css('transform', 'translate(-175%, 40%)');
+        $('section.digiImage').css('display', 'flex');
+        $('section.digiImage').css('align-items', 'center');
+        $('section.digiImage').css('mix-blend-mode', 'screen');
+        $('section.digiImage').css('width', '920px');
+        $('section.digiImage').css('height', '690px');
+        $('section.digiImage').css('margin', '0','auto');
+       $('section.digiImage').css('background-position-y',
               (-ani.frame_height * ani.cur_frame) + 'px'
             );
             ani.cur_frame = (ani.cur_frame + 1) % ani.num_frames;
@@ -56,13 +63,17 @@
           ani.frame_duration
         );
       });
-    </script>
+    </script> -->
 
-    <form action="action.js" method="get">
-      <label for="digiName">Search Digimon:</label>
-      <input type="text" id="digiName" name="digiName" />
-      <input type="submit" value="Submit">
+    <form id="digimonForm">
+      <label for="digiSearch">Search Digimon:</label>
+      <input type="text" id="digiSearch" name="digiName" onkeyup="showDigi()" />
+      <input type="button" value="Search" id="btSearchDigimon">
     </form>
+    <section id="digimon">
+
+    </section>
+    <script src="action.js"></script>
 
 </body>
 
