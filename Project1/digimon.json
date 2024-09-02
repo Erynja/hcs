@@ -2,12 +2,14 @@
     "digimon": [
       {
         "name": "Greymon",
+        "level": "Champion",
         "digiType": "Reptile Digimon",
         "attack": "Mega Flame"
        
       },
       {
         "name": "Agumon",
+        "level": "Rookie",
         "digiType": "Reptile Digimon",
         "attack": "Kleine Flamme"
       }
